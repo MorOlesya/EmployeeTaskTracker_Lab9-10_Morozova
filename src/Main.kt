@@ -21,4 +21,20 @@ fun main() {
 
     val task4 = tasl1.copy(priority = Priority.high)
     println(task4.toString())
+
+    //Задание 4
+    println()
+    println("Задание 4")
+
+    val d1 = DevelopmentDepartment()
+    println("d1: ${d1.departmentName}")
+    d1.printDepartmentGoal()
+
+    val d2 = TestingDepartment()
+    println("d2: ${d2.departmentName}")
+    d2.printDepartmentGoal()
+
+
+
+
 }
