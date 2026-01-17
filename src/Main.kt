@@ -43,5 +43,15 @@ fun main() {
         TestingDepartment("Тестирование") )
     reports.forEach { part -> println(part.generateReport()) }
 
+    //Задание 6
+    println()
+    println("Задание 6")
+    val emp = Employee("Иванов Иван Иванович", "Стажёр", 100, 5)
+    val d3 = DevelopmentDepartment()
+    val d4 = TestingDepartment()
+    val task1 = Task("Собрать цветы", "Найти поле цветов и собрать их", Priority.medium,false)
+    val task2 = Task("Собрать травы", "Найти поле цветов и собрать лечебные травы", Priority.medium,false)
+    emp.assignTask(task1)
+    emp.assignTask(task2)
 
 }
